@@ -1,13 +1,15 @@
 "use client"
 
-import React from 'react'
+import Image from 'next/image';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import avatar from '../public/emoji.png';
 import BackgroundCircles from './BackgroundCircles';
-import Image from 'next/image'
-import avatar from '../public/emoji.png'
+import { useSectionInView } from '@/lib/hooks';
 
 
 export default function Hero() {
+  const { ref } = useSectionInView("Home")
+
   const [text, count] = useTypewriter({
     words: [
       "Hey, I'm Yuliia",
@@ -17,8 +19,9 @@ export default function Hero() {
     loop: true,
     delaySpeed: 2000
   })
+  
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div ref={ref} id="home" className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
 
       <Image 

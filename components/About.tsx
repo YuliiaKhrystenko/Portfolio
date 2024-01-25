@@ -1,15 +1,19 @@
 "use client"
 
-import React from 'react'
-import { motion } from 'framer-motion'
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from 'framer-motion';
 
 export default function About() {
+  const { ref } = useSectionInView("About")
+  
   return (
     <motion.div 
+    ref={ref}
     className='h-screen flex flex-col relative items-center text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto'
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.2 }}
+    id="about"
     >
       <h3 className='absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
         <div className='space-y-10 mt-32 sm:mt-20 px-2 md:px-10'>

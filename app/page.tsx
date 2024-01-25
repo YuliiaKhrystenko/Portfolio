@@ -1,10 +1,11 @@
-import About from "@/components/About";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <main className="h-screen snap-y snap-mandatory scroll-smooth overflow-scroll z-0">
 
       {/* HERO */}
       <section className="snap-start">
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
 
       {/* PROJECTS */}
+      <section className="snap-start">
+        <Projects />
+      </section>
 
       {/* CONTACT ME */}
 

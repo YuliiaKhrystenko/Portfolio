@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/Header";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} bg-[rgb(36,36,36)] text-white`}>
+        <ActiveSectionContextProvider>
         <Header />
         {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
