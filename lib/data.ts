@@ -52,7 +52,7 @@ export const projectsData = [
   {
     title: "Admin Dashboard",
     description:
-      "Build a MERN stack admin dashboard",
+      "Build a MERN stack admin dashboard using",
     tags: ["React", "Redux", "Node JS", "Express", "MongoDB", "Material UI", "Nivo Charts"],
     imageUrl: AdminDashboardMockup,
   },
