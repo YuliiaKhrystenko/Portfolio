@@ -10,7 +10,7 @@ import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#a252c8]/80">
+    <main className="h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#ff0f80]/80">
 
       {/* HERO */}
       <section className="snap-start">

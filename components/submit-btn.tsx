@@ -7,7 +7,7 @@ export default function SubmitBtn() {
 
   return (
     <button 
-    className='group flex items-center justify-center gap-2 bg-[#a252c8] py-5 px-10 rounded-md text-black font-bold transition disabled:scale-100 disabled:bg-opacity-65' 
+    className='group flex items-center justify-center gap-2 bg-[#ff0f80]/70 py-5 px-10 rounded-md text-white tracking-wider uppercase transition disabled:scale-100 disabled:bg-opacity-65' 
     type='submit'
     disabled={pending}
     >
@@ -16,7 +16,7 @@ export default function SubmitBtn() {
       ) : (
         <>
           Submit
-          < FaPaperPlane className='text-sm opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1' />
+          <FaPaperPlane className='text-sm opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1' />
         </>
       )}
     </button>

@@ -34,7 +34,7 @@ export default function Hero() {
         <h2 className='text-sm uppercase text-gray-500 pb-4 tracking-[15px]'>Frontend Developer</h2>
         <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold px-10'>
           <span className='mr-3'>{text}</span>
-          <Cursor cursorColor='#a252c8' />
+          <Cursor cursorColor='#ff0f80' />
         </h1>
       </div>
     </div>

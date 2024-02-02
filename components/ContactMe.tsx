@@ -28,7 +28,7 @@ export default function ContactMe() {
         <p className='text-gray-500 pb-4 sm:pb-8'>Please contact me directly at <a className='underline' href='mailto:yu6785963@gmail.com'>yu6785963@gmail.com</a> or through this form.</p>
 
         <form
-          className='flex flex-col space-y-2 w-fit mx-auto' action={async (formData) => {
+          className='flex flex-col space-y-2 w-fit md:w-full mx-auto' action={async (formData) => {
             const { data, error } = await sendEmail(formData)
 
             if (error) {
