@@ -55,12 +55,14 @@ export const projectsData = [
       "Build a MERN stack admin dashboard using",
     tags: ["React", "Redux", "Node JS", "Express", "MongoDB", "Material UI", "Nivo Charts"],
     imageUrl: AdminDashboardMockup,
+    projectUrl: "https://admin-frontend-f1x0.onrender.com/"
   },
   {
     title: "Landing Page",
     description:
       "Build a stack admin dashboard",
-    tags: ["React", "Redux", "Node JS", "Express", "MongoDB", "Material UI", "Nivo Charts"],
+    tags: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
     imageUrl: LandingMockup,
+    projectUrl: "https://landing-page-a927f.web.app/"
   },
 ] as const;
