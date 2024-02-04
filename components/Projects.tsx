@@ -54,8 +54,8 @@ export default function Projects() {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.2 }}
-    className='h-screen relative flex overflow-hidden flex-col md:flex-row justify-evenly items-center  mx-auto z-0'>
-      <h3 className='absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>Projects</h3>
+    className='h-screen relative flex overflow-hidden flex-col md:flex-row justify-evenly items-center mx-auto z-0'>
+      <h3 className='absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl'>Projects</h3>
 
       <div className='relative w-full flex flex-col md:flex-row items-center md:items-start justify-center gap-10 z-20 mt-44 md:mt-20'>
         {projectsData.map((project, index) => (
@@ -64,8 +64,6 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
-
-      {/* <div className='w-full absolute top-[30%] bg-[#a252c8]/30 left-0 h-[300px] -skew-y-12' /> */}
     </motion.div>
   )
 }
